@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+	<display-name>Project_CMC_CSDLPT</display-name>
+	<welcome-file-list>
+		<welcome-file>/public/index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>controller.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginClient1Controller</servlet-name>
+		<servlet-class>controller.client1.LoginClient1Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginClient1Controller</servlet-name>
+		<url-pattern>/loginc1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginClient2Controller</servlet-name>
+		<servlet-class>controller.client2.LoginClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginClient2Controller</servlet-name>
+		<url-pattern>/loginc2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>IndexPublicController</servlet-name>
+		<servlet-class>controller.client1.IndexPublicController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexPublicController</servlet-name>
+		<url-pattern>/client1/public/index</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>IndexPublicClient2Controller</servlet-name>
+		<servlet-class>controller.client2.IndexPublicClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexPublicClient2Controller</servlet-name>
+		<url-pattern>/client2/public/index</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ProductsPublicController</servlet-name>
+		<servlet-class>controller.client1.ProductsPublicController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductsPublicController</servlet-name>
+		<url-pattern>/client1/public/products</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ProductsPublicClient2Controller</servlet-name>
+		<servlet-class>controller.client2.ProductsPublicClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductsPublicClient2Controller</servlet-name>
+		<url-pattern>/client2/public/products</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DetailProductsController</servlet-name>
+		<servlet-class>controller.client1.DetailProductsController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DetailProductsController</servlet-name>
+		<url-pattern>/client1/public/products/detail</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DetailProductsClient2Controller</servlet-name>
+		<servlet-class>controller.client2.DetailProductsClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DetailProductsController</servlet-name>
+		<url-pattern>/client2/public/products/detail</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutController</servlet-name>
+		<servlet-class>controller.client1.LogoutController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutController</servlet-name>
+		<url-pattern>/logoutc1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutClient2Controller</servlet-name>
+		<servlet-class>controller.client2.LogoutClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutClient2Controller</servlet-name>
+		<url-pattern>/logoutc2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SignUpController</servlet-name>
+		<servlet-class>controller.client1.SignUpController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignUpController</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SignUpC2Controller</servlet-name>
+		<servlet-class>controller.client2.SignUpC2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignUpC2Controller</servlet-name>
+		<url-pattern>/signupc2</url-pattern>
+	</servlet-mapping>
+
+	<!-- client1 -->
+	<servlet>
+		<servlet-name>IndexAdminC1Controller</servlet-name>
+		<servlet-class>controller.client1.IndexAdminC1Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexAdminC1Controller</servlet-name>
+		<url-pattern>/client1/admin/index</url-pattern>
+	</servlet-mapping>
+
+	<!-- client2 -->
+	<servlet>
+		<servlet-name>IndexAdminClient2Controller</servlet-name>
+		<servlet-class>controller.client2.IndexAdminClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexAdminClient2Controller</servlet-name>
+		<url-pattern>/client2/admin/index</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>IndexUserAdminController</servlet-name>
+		<servlet-class>controller.client1.IndexUserAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexUserAdminController</servlet-name>
+		<url-pattern>/client1/admin/user/index</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>IndexUserAdminClient2Controller</servlet-name>
+		<servlet-class>controller.client2.IndexUserAdminClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexUserAdminClient2Controller</servlet-name>
+		<url-pattern>/client2/admin/user/index</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateEmployeeController</servlet-name>
+		<servlet-class>controller.client1.UpdateEmployeeController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateEmployeeController</servlet-name>
+		<url-pattern>/client1/admin/user/update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateEmployeeClient2Controller</servlet-name>
+		<servlet-class>controller.client2.UpdateEmployeeClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateEmployeeClient2Controller</servlet-name>
+		<url-pattern>/client2/admin/user/update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditUserAdminClient2Controller</servlet-name>
+		<servlet-class>controller.client2.EditUserAdminClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditUserAdminClient2Controller</servlet-name>
+		<url-pattern>/client2/admin/user/edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditUserAdminController</servlet-name>
+		<servlet-class>controller.client1.EditUserAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditUserAdminClient2Controller</servlet-name>
+		<url-pattern>/client1/admin/user/edit</url-pattern>
+	</servlet-mapping>
+
+	<!-- client1 -->
+	<servlet>
+		<servlet-name>DelUserAdminController</servlet-name>
+		<servlet-class>controller.client1.DelUserAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelUserAdminController</servlet-name>
+		<url-pattern>/client1/admin/user/del</url-pattern>
+	</servlet-mapping>
+
+	<!-- client2 -->
+	<servlet>
+		<servlet-name>DelUserAdminClient2Controller</servlet-name>
+		<servlet-class>controller.client2.DelUserAdminClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelUserAdminClient2Controller</servlet-name>
+		<url-pattern>/client2/admin/user/del</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>IndexCatAdminController</servlet-name>
+		<servlet-class>controller.client1.IndexCatAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexCatAdminController</servlet-name>
+		<url-pattern>/client1/admin/cat/index</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>IndexCatAdminClient2Controller</servlet-name>
+		<servlet-class>controller.client2.IndexCatAdminClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexCatAdminClient2Controller</servlet-name>
+		<url-pattern>/client2/admin/cat/index</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditCatAdminController</servlet-name>
+		<servlet-class>controller.client1.EditCatAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditCatAdminController</servlet-name>
+		<url-pattern>/client1/admin/cat/edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditCatAdminClient2Controller</servlet-name>
+		<servlet-class>controller.client2.EditCatAdminClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditCatAdminClient2Controller</servlet-name>
+		<url-pattern>/client2/admin/cat/edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddCatAdminController</servlet-name>
+		<servlet-class>controller.client1.AddCatAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCatAdminController</servlet-name>
+		<url-pattern>/client1/admin/cat/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddCatAdminC2Controller</servlet-name>
+		<servlet-class>controller.client2.AddCatAdminC2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCatAdminC2Controller</servlet-name>
+		<url-pattern>/client2/admin/cat/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DelCatAdminController</servlet-name>
+		<servlet-class>controller.client1.DelCatAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelCatAdminController</servlet-name>
+		<url-pattern>/client1/admin/cat/del</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DelCatAdminClient2Controller</servlet-name>
+		<servlet-class>controller.client2.DelCatAdminClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelCatAdminClient2Controller</servlet-name>
+		<url-pattern>/client2/admin/cat/del</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ForgetPassAdminClient2Controller</servlet-name>
+		<servlet-class>controller.client2.ForgetPassAdminClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgetPassAdminClient2Controller</servlet-name>
+		<url-pattern>/client2/admin/forget/index</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginForgetPassAdminController</servlet-name>
+		<servlet-class>controller.client1.LoginForgetPassAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginForgetPassAdminController</servlet-name>
+		<url-pattern>/client1/admin/forget/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginForgetPassAdminClient2Controller</servlet-name>
+		<servlet-class>controller.client2.LoginForgetPassAdminClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginForgetPassAdminClient2Controller</servlet-name>
+		<url-pattern>/client2/admin/forget/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IndexProductsAdminController</servlet-name>
+		<servlet-class>controller.client1.IndexProductsAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexProductsAdminController</servlet-name>
+		<url-pattern>/client1/admin/products</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IndexProductsAdminClient2Controller</servlet-name>
+		<servlet-class>controller.client2.IndexProductsAdminClient2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IndexProductsAdminClient2Controller</servlet-name>
+		<url-pattern>/client2/admin/products</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddProductAdminController</servlet-name>
+		<servlet-class>controller.client1.AddProductAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddProductAdminController</servlet-name>
+		<url-pattern>/client1/admin/sanpham/add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditProductAdminController</servlet-name>
+		<servlet-class>controller.client1.EditProductAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditProductAdminController</servlet-name>
+		<url-pattern>/client1/admin/sanpham/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelProductAdminController</servlet-name>
+		<servlet-class>controller.client1.DelProductAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelProductAdminController</servlet-name>
+		<url-pattern>/client1/admin/sanpham/del</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PictureProductAdminController</servlet-name>
+		<servlet-class>controller.client1.PictureProductAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PictureProductAdminController</servlet-name>
+		<url-pattern>/client1/admin/sanpham/hinhanhsp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddPictureProductAdminController</servlet-name>
+		<servlet-class>controller.client1.AddPictureProductAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddPictureProductAdminController</servlet-name>
+		<url-pattern>/client1/admin/sanpham/hinhanhsp/add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelPictureProductAdminController</servlet-name>
+		<servlet-class>controller.client1.DelPictureProductAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelPictureProductAdminController</servlet-name>
+		<url-pattern>/client1/admin/sanpham/hinhanhsp/del</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditPictureProductAdminController</servlet-name>
+		<servlet-class>controller.client1.EditPictureProductAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditPictureProductAdminController</servlet-name>
+		<url-pattern>/client1/admin/sanpham/hinhanhsp/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CartPublicController</servlet-name>
+		<servlet-class>controller.client1.CartPublicController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CartPublicController</servlet-name>
+		<url-pattern>/client1/public/cart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PublicDatHangController</servlet-name>
+		<servlet-class>controller.client1.PublicDatHangController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicDatHangController</servlet-name>
+		<url-pattern>/client1/public/dathang</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PublicOrderController</servlet-name>
+		<servlet-class>controller.client1.PublicOrderController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PublicOrderController</servlet-name>
+		<url-pattern>/client1/public/order</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateStatusOrderController</servlet-name>
+		<servlet-class>controller.client1.UpdateStatusOrderController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateStatusOrderController</servlet-name>
+		<url-pattern>/client1/public/update-status</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ForgetPassAdminController</servlet-name>
+		<servlet-class>controller.client1.ForgetPassAdminController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgetPassAdminController</servlet-name>
+		<url-pattern>/admin/forget/index</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>

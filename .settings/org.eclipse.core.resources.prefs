@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/main/java/controller/client1/AddPictureProductAdminController.java=UTF-8
+encoding//src/main/java/controller/client1/AddProductAdminController.java=UTF-8
+encoding//src/main/java/controller/client1/EditPictureProductAdminController.java=UTF-8
+encoding//src/main/java/controller/client1/EditUserAdminController.java=UTF-8
+encoding//src/main/java/controller/client1/LoginClient1Controller.java=UTF-8
+encoding//src/main/java/controller/client1/PublicDatHangController.java=UTF-8
+encoding//src/main/java/controller/client1/SignUpController.java=UTF-8
+encoding//src/main/java/controller/client2/EditUserAdminClient2Controller.java=UTF-8
+encoding//src/main/java/controller/client2/LoginClient2Controller.java=UTF-8
+encoding//src/main/java/controller/client2/SignUpC2Controller.java=UTF-8
+encoding//src/main/java/utils/WriteExcelHoaDon.java=UTF-8
